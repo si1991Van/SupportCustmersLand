@@ -1,0 +1,6 @@
+framework module Pods_App_Spport_Customers_LandUITests {
+  umbrella header "Pods-App-Spport-Customers-LandUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
