@@ -1,0 +1,85 @@
+/* 
+  Localizable.strings
+  App-Spport-Customers-Land
+
+  Created by apple on 12/29/18.
+  Copyright © 2018 haiphat. All rights reserved.
+*/
+"no-result"="Không tìm thấy kết quả phù hợp";
+"no-internet-connection"="Không có kết nối mạng, vui lòng kiểm tra kết nối mạng và thử lại";
+"cannot-connect-to-server"="Không thể kết nối với máy chủ";
+
+// place holder
+"place_holder_email"="Địa chỉ email";
+"place_holder_password"="Mật khẩu";
+"place_holder_confirm_password"="Xác nhận mật khẩu";
+"place_holder_full_name"="Họ và tên";
+"place_holder_current_password"="Mật khẩu cũ";
+"place_holder_new_password"="Mật khẩu mới";
+"place_holder_new_confirm_password"="Xác nhận mật khẩu mới";
+"place_holder_phone"="Số điện thoại";
+"place_holder_birthday"="Ngày sinh";
+"place_holder_identity"="Số CMTND";
+
+// validate filed
+"filed_error_password_blank"="Mật khẩu không được để trống";
+"filed_error_email_blank"="Địa chỉ email không được để trống";
+"filed_error_email_invalid"="Email không đúng định dạng";
+"filed_error_confirm_password_blank"= "Xác nhận mật khẩu không được để trống";
+"filed_error_password_lenght"= "Mật khẩu ít nhất phải 6 ký tự trở nên";
+"filed_error_full_name_blank"= "Họ và tên không được để trống";
+"filed_error_new_password_not_equal"="Mật khẩu và mật khẩu xác nhận không giống nhau";
+"filed_error_phone_blank"="Số điện thoại không được để trống";
+"filed_error_birthday_blank"="Ngày sinh không được để trống";
+"filed_error_identity_blank"="số CMTND không được để trống";
+
+"filed_error_current_password_blank"="Mật khẩu cũ không được để trống";
+"filed_error_new_password_blank"="Mật khẩu mới không được để trống";
+"filed_error_new_confirm_password_blank"="Xác nhận mật khẩu không được để trống";
+
+// dialog
+"alert-title-loading"="Đang tải ...";
+"alert-text-please-wait"="Vui lòng đợi...";
+"alert-title-error" = "Lỗi";
+"alert-title-success" = "Thành công";
+"alert-btn-close" = "Đóng";
+
+// logout
+"logout_text_confirmation"="Bạn có thực sự muốn đăng xuất không?";
+"logout_action_confirm"="Đăng xuất";
+"logout_action_cancel"="Hủy";
+
+// login
+"btn_sign_in"="ĐĂNG NHẬP";
+"login-wrong-role-message"="Tài khoản của bạn không được phép đăng nhập vào hệ thống.";
+
+// forgot password
+"btn_forgot_password_submit"="Gửi";
+"btn_forgot_password"="Quên mật khẩu";
+
+
+// registers
+"btn_registers"="Đăng ký";
+// profile
+"lable-update-information" = "Cập nhật thông tin";
+"lable-change-password" = "Đổi mật khẩu";
+"lable-booking" = "Đặt lịch thăm quan";
+"lable-setting" = "Cấu hình ứng dụng";
+"lable-profile-hepl-me" = "Trợ giúp";
+"lable-profile_share" = "Giới thiệu bạn bè";
+"lable-profile-rateting" = "Đánh giá ứng dụng";
+"lable-profile-send-email" = "Góp ý cho nhà phát triển";
+"lable-profile-info" = "Thông tin sản phẩm";
+"lable-profile-account" = "Tài khoản";
+"lable-log-out" = "Đăng xuất";
+"btn-save" = "Lưu lại";
+"text_show_info_app"= "versionName 1.0";
+
+// change avatar
+"user_change_avatar_message"="Thay đổi hình ảnh đại diện";
+"user_change_avatar_by_photo"="Chọn hình ảnh trong thư viện ảnh";
+"user_change_avatar_by_camera"="Chụp ảnh";
+"user_change_avatar_cancel"="Hủy";
+"user_change_avatar_successful"="Cập nhật ảnh đại diện thành công!";
+
+
