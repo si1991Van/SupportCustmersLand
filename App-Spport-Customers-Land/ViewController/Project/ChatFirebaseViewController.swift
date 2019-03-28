@@ -30,6 +30,24 @@ class ChatFirebaseViewController: BaseViewController {
         ref = Database.database().reference().child("messages").child((UserService.userInfo?.phone)!)
         
         readChat()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+                let scrollPoint = CGPoint(x: 0, y: self.tablViewChat.contentSize.height - self.tablViewChat.frame.size.height)
+                self.tablViewChat.setContentOffset(scrollPoint, animated: false)
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
     
     override func localization() {

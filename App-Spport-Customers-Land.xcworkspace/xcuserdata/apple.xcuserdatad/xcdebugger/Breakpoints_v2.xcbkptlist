@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "App-Spport-Customers-Land/ViewController/Project/ChatFirebaseViewController.swift"
-            timestampString = "575441107.220336"
+            timestampString = "575461352.049738"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "pushChat(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -150,11 +150,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "App-Spport-Customers-Land/AppDelegate.swift"
-            timestampString = "574663349.388545"
+            timestampString = "575458461.459944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "145"
@@ -166,11 +166,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "App-Spport-Customers-Land/AppDelegate.swift"
-            timestampString = "574663349.3895479"
+            timestampString = "575458461.460524"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "153"
@@ -182,11 +182,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "App-Spport-Customers-Land/AppDelegate.swift"
-            timestampString = "574663349.38966"
+            timestampString = "575458461.4608279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "179"
@@ -234,7 +234,7 @@
                   moduleName = "App-Spport-Customers-Land"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/Untitled/Project/IOS/App-Spport-Customers-Land/App-Spport-Customers-Land/FCM/FCMNotificationService.swift"
-                  timestampString = "575452921.539129"
+                  timestampString = "575461352.585418"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
@@ -249,7 +249,7 @@
                   moduleName = "App-Spport-Customers-Land"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/Untitled/Project/IOS/App-Spport-Customers-Land/App-Spport-Customers-Land/FCM/FCMNotificationService.swift"
-                  timestampString = "575452921.541593"
+                  timestampString = "575461352.5878249"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -257,6 +257,22 @@
                   offsetFromSymbolStart = "104">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App-Spport-Customers-Land/ViewController/Project/ChatFirebaseViewController.swift"
+            timestampString = "575461352.050524"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
