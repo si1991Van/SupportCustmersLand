@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MessageUI
 
-class BaseViewController: UIViewController{
+class BaseViewController: UIViewController,MFMailComposeViewControllerDelegate{
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +33,33 @@ class BaseViewController: UIViewController{
     
     func sendEmail() {
         if !MFMailComposeViewController.canSendMail() {
-            Toast.error("không có email")
+            Toast.error("Bạn chưa đăng nhập mail trên thiết bị")
             return
         }else{
             let composeVC = MFMailComposeViewController()
             composeVC.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
-            composeVC.setToRecipients(["address@example.com"])
-            composeVC.setSubject("Hello!")
-            composeVC.setMessageBody("Hello from California!", isHTML: false)
+            composeVC.setToRecipients(["vtechhomes@gmail.com"])
+            composeVC.setSubject("Góp ý!")
+            composeVC.setMessageBody("", isHTML: false)
             // Present the view controller modally.
             self.present(composeVC, animated: true, completion: nil)
         }
     }
-    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        switch result.rawValue {
+        case MFMailComposeResult.cancelled.rawValue:
+            print("Cancelled")
+        case MFMailComposeResult.saved.rawValue:
+            print("Saved")
+        case MFMailComposeResult.sent.rawValue:
+            print("Sent")
+        case MFMailComposeResult.failed.rawValue:
+            print("Error: \(String(describing: error?.localizedDescription))")
+        default:
+            break
+        }
+        controller.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
+    }
 }
+
