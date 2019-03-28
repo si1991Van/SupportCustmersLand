@@ -62,16 +62,11 @@ class SupportSwitchboardViewController: BaseViewController {
     
     
     func dialNumber(number : String?) {
-        
-        if let url = URL(string: "tel://\(String(describing: number))"),
-            UIApplication.shared.canOpenURL(url) {
-            if #available(iOS 10, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler:nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-        } else {
-            Toast.error("Có lỗi xảy ra")
+        if let urlMobile = NSURL(string: "tel://"+number!),
+            UIApplication.shared.canOpenURL(urlMobile as URL) {
+            UIApplication.shared.open(urlMobile as URL)
+        }else {
+                Toast.error("Có lỗi xảy ra")
         }
     }
 }

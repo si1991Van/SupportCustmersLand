@@ -17,38 +17,6 @@
             endingLineNumber = "36"
             landmarkName = "switchChanged(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "App_Spport_Customers_Land.SettingTableViewCell.switchChanged(Any) -&gt; ()"
-                  moduleName = "App-Spport-Customers-Land"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Untitled/Project/IOS/App-Spport-Customers-Land/App-Spport-Customers-Land/Tableview/SettingTableViewCell.swift"
-                  timestampString = "574247210.966462"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "21">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in App_Spport_Customers_Land.SettingTableViewCell.switchChanged(Any) -&gt; ()"
-                  moduleName = "App-Spport-Customers-Land"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Untitled/Project/IOS/App-Spport-Customers-Land/App-Spport-Customers-Land/Tableview/SettingTableViewCell.swift"
-                  timestampString = "574247210.970629"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -170,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "App-Spport-Customers-Land/ViewController/Project/ChatFirebaseViewController.swift"
-            timestampString = "573708016.918494"
+            timestampString = "575441107.220336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -191,8 +159,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "145"
             endingLineNumber = "145"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "messaging(_:didRefreshRegistrationToken:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -207,8 +175,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "153"
             endingLineNumber = "153"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "messaging(_:didReceive:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -223,8 +191,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "179"
             endingLineNumber = "179"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "userNotificationCenter(_:didReceive:withCompletionHandler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -266,12 +234,12 @@
                   moduleName = "App-Spport-Customers-Land"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/Untitled/Project/IOS/App-Spport-Customers-Land/App-Spport-Customers-Land/FCM/FCMNotificationService.swift"
-                  timestampString = "574247211.023496"
+                  timestampString = "575448366.924746"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "68"
                   endingLineNumber = "68"
-                  offsetFromSymbolStart = "876">
+                  offsetFromSymbolStart = "864">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -281,12 +249,12 @@
                   moduleName = "App-Spport-Customers-Land"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/Untitled/Project/IOS/App-Spport-Customers-Land/App-Spport-Customers-Land/FCM/FCMNotificationService.swift"
-                  timestampString = "574247211.027084"
+                  timestampString = "575448366.927217"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
                   endingLineNumber = "69"
-                  offsetFromSymbolStart = "18">
+                  offsetFromSymbolStart = "104">
                </Location>
             </Locations>
          </BreakpointContent>
