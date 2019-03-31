@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -139,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-background" translatesAutoresizingMaskIntoConstraints="NO" id="SnV-Mf-7Um">
-                                <rect key="frame" x="0.0" y="713" width="375" height="16"/>
+                                <rect key="frame" x="0.0" y="312" width="375" height="417"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0g5-vK-vR7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
@@ -170,7 +170,7 @@
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="CdM-Tp-KXx">
-                                                <rect key="frame" x="19" y="4" width="16" height="16"/>
+                                                <rect key="frame" x="20" y="5" width="14" height="14"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -613,45 +613,6 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Hình thức" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sR8-uI-NeN" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="24" y="84" width="130" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="pBr-D0-0gd"/>
-                                                    <constraint firstAttribute="width" constant="130" id="wKI-9L-yvi"/>
-                                                </constraints>
-                                                <attributedString key="attributedText"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại bất động sản" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wiK-Xp-QA6" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="164" y="84" width="187" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="FFy-gA-QhU"/>
-                                                </constraints>
-                                                <attributedString key="attributedText"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Địa chỉ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gds-e8-Z50">
                                                 <rect key="frame" x="24" y="144" width="327" height="45"/>
                                                 <constraints>
@@ -662,11 +623,86 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Tỉnh/Thành phố" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thG-Jb-5Nb" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="24" y="204" width="150" height="45"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Diện tích" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63u-eZ-7K6">
+                                                <rect key="frame" x="24" y="264" width="188" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="1Ww-SK-hLu"/>
-                                                    <constraint firstAttribute="height" constant="45" id="5rv-RN-OvF"/>
+                                                    <constraint firstAttribute="height" constant="45" id="Dup-rE-CkW"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-ah-439">
+                                                <rect key="frame" x="24" y="472" width="327" height="55"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoIcon.png" highlightedImage="infoIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6bd-yC-c6G">
+                                                        <rect key="frame" x="148.66666666666666" y="5" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="7Kl-dx-eu4"/>
+                                                            <constraint firstAttribute="width" constant="30" id="icJ-Zc-81B"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload ảnh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeF-sP-uPI">
+                                                        <rect key="frame" x="0.0" y="35" width="327" height="14.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxZ-4q-2y0">
+                                                        <rect key="frame" x="50" y="0.0" width="227" height="55"/>
+                                                        <connections>
+                                                            <action selector="onClickUploadImage:" destination="x69-Ci-r44" eventType="touchUpInside" id="EC6-fI-CeU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="TxZ-4q-2y0" firstAttribute="top" secondItem="SqD-ah-439" secondAttribute="top" id="8Of-5Z-GW7"/>
+                                                    <constraint firstItem="TxZ-4q-2y0" firstAttribute="leading" secondItem="SqD-ah-439" secondAttribute="leading" constant="50" id="8Vv-uK-QCY"/>
+                                                    <constraint firstItem="6bd-yC-c6G" firstAttribute="top" secondItem="SqD-ah-439" secondAttribute="top" constant="5" id="JvN-D9-G6M"/>
+                                                    <constraint firstAttribute="height" constant="55" id="K8q-ba-fzG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TxZ-4q-2y0" secondAttribute="bottom" id="XoT-Di-TKH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xeF-sP-uPI" secondAttribute="trailing" id="ajK-kL-maZ"/>
+                                                    <constraint firstItem="xeF-sP-uPI" firstAttribute="leading" secondItem="SqD-ah-439" secondAttribute="leading" id="eho-ZF-tf5"/>
+                                                    <constraint firstItem="xeF-sP-uPI" firstAttribute="top" secondItem="6bd-yC-c6G" secondAttribute="bottom" id="pCd-af-UaE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TxZ-4q-2y0" secondAttribute="trailing" constant="50" id="y15-qW-iSI"/>
+                                                    <constraint firstItem="6bd-yC-c6G" firstAttribute="centerX" secondItem="SqD-ah-439" secondAttribute="centerX" id="z5z-Yr-Nfl"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Giá mong muốn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VjU-Nv-h69">
+                                                <rect key="frame" x="24" y="324" width="188" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="fTj-3A-1FN"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="uha-D5-QdG"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại giá" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yin-wq-dVG" customClass="DropDown" customModule="iOSDropDown">
+                                                <rect key="frame" x="222" y="324" width="129" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="bAA-Wb-WV1"/>
+                                                </constraints>
+                                                <attributedString key="attributedText"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại diện tích" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUM-cO-oDe" customClass="DropDown" customModule="iOSDropDown">
+                                                <rect key="frame" x="222" y="264" width="129" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="129" id="6yA-lu-avT"/>
+                                                    <constraint firstAttribute="height" constant="45" id="77x-MJ-XfE"/>
                                                 </constraints>
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -701,20 +737,11 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Diện tích" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63u-eZ-7K6">
-                                                <rect key="frame" x="24" y="264" width="188" height="45"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Tỉnh/Thành phố" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thG-Jb-5Nb" customClass="DropDown" customModule="iOSDropDown">
+                                                <rect key="frame" x="24" y="204" width="150" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="Dup-rE-CkW"/>
-                                                </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại diện tích" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUM-cO-oDe" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="222" y="264" width="129" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="129" id="6yA-lu-avT"/>
-                                                    <constraint firstAttribute="height" constant="45" id="77x-MJ-XfE"/>
+                                                    <constraint firstAttribute="width" constant="150" id="1Ww-SK-hLu"/>
+                                                    <constraint firstAttribute="height" constant="45" id="5rv-RN-OvF"/>
                                                 </constraints>
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -730,20 +757,10 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Giá mong muốn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VjU-Nv-h69">
-                                                <rect key="frame" x="24" y="324" width="188" height="45"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại bất động sản" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wiK-Xp-QA6" customClass="DropDown" customModule="iOSDropDown">
+                                                <rect key="frame" x="164" y="84" width="187" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="fTj-3A-1FN"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="uha-D5-QdG"/>
-                                                </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại giá" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yin-wq-dVG" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="222" y="324" width="129" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="bAA-Wb-WV1"/>
+                                                    <constraint firstAttribute="height" constant="45" id="FFy-gA-QhU"/>
                                                 </constraints>
                                                 <attributedString key="attributedText"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -753,6 +770,26 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                         <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Hình thức" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sR8-uI-NeN" customClass="DropDown" customModule="iOSDropDown">
+                                                <rect key="frame" x="24" y="84" width="130" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="pBr-D0-0gd"/>
+                                                    <constraint firstAttribute="width" constant="130" id="wKI-9L-yvi"/>
+                                                </constraints>
+                                                <attributedString key="attributedText"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="5"/>
@@ -815,43 +852,6 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                     <action selector="onClickSave:" destination="x69-Ci-r44" eventType="touchUpInside" id="G7q-4z-wIM"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-ah-439">
-                                                <rect key="frame" x="24" y="472" width="327" height="55"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoIcon.png" highlightedImage="infoIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6bd-yC-c6G">
-                                                        <rect key="frame" x="148.66666666666666" y="5" width="30" height="30"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="7Kl-dx-eu4"/>
-                                                            <constraint firstAttribute="width" constant="30" id="icJ-Zc-81B"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload ảnh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeF-sP-uPI">
-                                                        <rect key="frame" x="0.0" y="35" width="327" height="14.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxZ-4q-2y0">
-                                                        <rect key="frame" x="50" y="0.0" width="227" height="55"/>
-                                                        <connections>
-                                                            <action selector="onClickUploadImage:" destination="x69-Ci-r44" eventType="touchUpInside" id="EC6-fI-CeU"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstItem="TxZ-4q-2y0" firstAttribute="top" secondItem="SqD-ah-439" secondAttribute="top" id="8Of-5Z-GW7"/>
-                                                    <constraint firstItem="TxZ-4q-2y0" firstAttribute="leading" secondItem="SqD-ah-439" secondAttribute="leading" constant="50" id="8Vv-uK-QCY"/>
-                                                    <constraint firstItem="6bd-yC-c6G" firstAttribute="top" secondItem="SqD-ah-439" secondAttribute="top" constant="5" id="JvN-D9-G6M"/>
-                                                    <constraint firstAttribute="height" constant="55" id="K8q-ba-fzG"/>
-                                                    <constraint firstAttribute="bottom" secondItem="TxZ-4q-2y0" secondAttribute="bottom" id="XoT-Di-TKH"/>
-                                                    <constraint firstAttribute="trailing" secondItem="xeF-sP-uPI" secondAttribute="trailing" id="ajK-kL-maZ"/>
-                                                    <constraint firstItem="xeF-sP-uPI" firstAttribute="leading" secondItem="SqD-ah-439" secondAttribute="leading" id="eho-ZF-tf5"/>
-                                                    <constraint firstItem="xeF-sP-uPI" firstAttribute="top" secondItem="6bd-yC-c6G" secondAttribute="bottom" id="pCd-af-UaE"/>
-                                                    <constraint firstAttribute="trailing" secondItem="TxZ-4q-2y0" secondAttribute="trailing" constant="50" id="y15-qW-iSI"/>
-                                                    <constraint firstItem="6bd-yC-c6G" firstAttribute="centerX" secondItem="SqD-ah-439" secondAttribute="centerX" id="z5z-Yr-Nfl"/>
-                                                </constraints>
-                                            </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông tin liên hệ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcq-XF-EZz">
                                                 <rect key="frame" x="24" y="612" width="327" height="20.333333333333371"/>
                                                 <color key="backgroundColor" red="0.9601467252" green="0.51471614840000002" blue="0.1047999039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1222,7 +1222,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="rwT-Nc-x49">
-                                                <rect key="frame" x="19" y="4" width="16" height="16"/>
+                                                <rect key="frame" x="20" y="5" width="14" height="14"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -1577,7 +1577,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="jrN-3D-GUK">
-                                                <rect key="frame" x="19" y="4" width="16" height="16"/>
+                                                <rect key="frame" x="20" y="5" width="14" height="14"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -1843,14 +1843,14 @@ Nội dung Quý khách hàng phản hồi, đánh giá sẽ được chuyển tr
     <resources>
         <image name="avatar-placeholder" width="75" height="75"/>
         <image name="ic-add-manager" width="50" height="50"/>
-        <image name="ic-arrowAltCircleRight" width="18" height="17.666666030883789"/>
-        <image name="ic-background" width="371" height="417.66665649414062"/>
-        <image name="ic-clock" width="10" height="10.666666984558105"/>
-        <image name="ic-headphones" width="18" height="16.666666030883789"/>
-        <image name="ic-history" width="18" height="17.666666030883789"/>
-        <image name="ic-newspaper" width="20.666666030883789" height="13.666666984558105"/>
-        <image name="ic-user" width="16" height="18.666666030883789"/>
-        <image name="ic_avatar_default" width="24.666666030883789" height="24.666666030883789"/>
+        <image name="ic-arrowAltCircleRight" width="18" height="17"/>
+        <image name="ic-background" width="371" height="417"/>
+        <image name="ic-clock" width="10" height="10"/>
+        <image name="ic-headphones" width="18" height="16"/>
+        <image name="ic-history" width="18" height="17"/>
+        <image name="ic-newspaper" width="20" height="13"/>
+        <image name="ic-user" width="16" height="18"/>
+        <image name="ic_avatar_default" width="24" height="24"/>
         <image name="ic_back" width="14" height="14"/>
         <image name="ic_delete" width="50" height="50"/>
         <image name="ic_logo" width="65" height="76"/>
