@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookingViewController: BaseViewController {
+class BookingViewController: BaseViewController, UITextFieldDelegate{
 
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var txtTitle: UILabel!
@@ -31,7 +31,17 @@ class BookingViewController: BaseViewController {
             txtEmail.text = UserService.userInfo?.email
         }
         
+        txtNote.delegate = self
+        
+        
     }
+    
+    func textFieldShouldReturn(_ txtNote: UITextField) -> Bool {
+        self.view.endEditing(true)
+        
+        return false
+    }
+    
     override func localization() {
         
     }

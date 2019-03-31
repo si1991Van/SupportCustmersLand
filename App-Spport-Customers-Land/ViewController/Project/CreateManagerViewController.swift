@@ -9,7 +9,7 @@
 import UIKit
 import iOSDropDown
 
-class CreateManagerViewController: BaseViewController {
+class CreateManagerViewController: BaseViewController, UITextFieldDelegate{
 
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var labTitle: UILabel!
@@ -48,12 +48,14 @@ class CreateManagerViewController: BaseViewController {
         imagUpload.image = #imageLiteral(resourceName: "ic-setting")
         tabViewUploadImage.dataSource = self
         imagePicker.delegate = self
+        txtDiscription.delegate = self
         getOption()
     }
 
     override func localization() {
         self.labTitle.text = Loc("Quản lý ký gửi")
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

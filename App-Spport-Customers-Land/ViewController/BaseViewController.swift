@@ -16,6 +16,7 @@ class BaseViewController: UIViewController,MFMailComposeViewControllerDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.localization()
+       
     }
     
     
@@ -26,6 +27,8 @@ class BaseViewController: UIViewController,MFMailComposeViewControllerDelegate{
     
     func localization(){
     }
+    
+    
     
     func setBaseTitile(_ txtTitle: UILabel? , _ name: String?){
         txtTitle?.text = name
