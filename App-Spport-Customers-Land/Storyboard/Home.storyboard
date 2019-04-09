@@ -139,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-background" translatesAutoresizingMaskIntoConstraints="NO" id="SnV-Mf-7Um">
-                                <rect key="frame" x="0.0" y="713" width="375" height="16"/>
+                                <rect key="frame" x="0.0" y="311.33333333333337" width="375" height="417.66666666666674"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0g5-vK-vR7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
@@ -170,7 +170,7 @@
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_back" translatesAutoresizingMaskIntoConstraints="NO" id="CdM-Tp-KXx">
-                                                <rect key="frame" x="19" y="4" width="16" height="16"/>
+                                                <rect key="frame" x="20" y="5" width="14" height="14"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -630,8 +630,27 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEA-2y-S7n">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_create_manage" translatesAutoresizingMaskIntoConstraints="NO" id="VoZ-rf-SNP">
+                                                <rect key="frame" x="24" y="24" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="IgN-uy-eqN"/>
+                                                    <constraint firstAttribute="height" constant="30" id="VMz-xN-0cI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐĂNG TIN RAO BÁN, CHO THUÊ NHÀ ĐẤT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1r6-pu-uGh">
+                                                <rect key="frame" x="59" y="24" width="292" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Quý vị nhập thông tin nhà đất cần bán hoặc cho thuê vào các mục dưới đây)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yf-xw-ZOj">
+                                                <rect key="frame" x="59" y="43.666666666666657" width="292" height="8.6666666666666643"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tiêu đề" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-as-nXc">
-                                                <rect key="frame" x="24" y="24" width="327" height="45"/>
+                                                <rect key="frame" x="24" y="76.333333333333343" width="327" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="ASu-oK-mcw"/>
                                                 </constraints>
@@ -640,7 +659,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Địa chỉ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gds-e8-Z50">
-                                                <rect key="frame" x="24" y="144" width="327" height="45"/>
+                                                <rect key="frame" x="24" y="196.33333333333331" width="327" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="0rF-Y6-Xcj"/>
                                                     <constraint firstAttribute="height" constant="45" id="Jh0-7o-iwW"/>
@@ -650,7 +669,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Diện tích" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63u-eZ-7K6">
-                                                <rect key="frame" x="24" y="264" width="188" height="45"/>
+                                                <rect key="frame" x="24" y="316.33333333333331" width="188" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="Dup-rE-CkW"/>
                                                 </constraints>
@@ -659,7 +678,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqD-ah-439">
-                                                <rect key="frame" x="24" y="472" width="327" height="55"/>
+                                                <rect key="frame" x="24" y="524.33333333333337" width="327" height="55"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infoIcon.png" highlightedImage="infoIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6bd-yC-c6G">
                                                         <rect key="frame" x="148.66666666666666" y="5" width="30" height="30"/>
@@ -696,7 +715,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Giá mong muốn" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VjU-Nv-h69">
-                                                <rect key="frame" x="24" y="324" width="188" height="45"/>
+                                                <rect key="frame" x="24" y="376.33333333333331" width="188" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="fTj-3A-1FN"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="uha-D5-QdG"/>
@@ -706,7 +725,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mô tả " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iy7-y4-a57">
-                                                <rect key="frame" x="24" y="384" width="327" height="80"/>
+                                                <rect key="frame" x="24" y="436.33333333333337" width="327" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="Jgv-l5-O4h"/>
                                                     <constraint firstAttribute="height" constant="80" id="s6b-FK-mXC"/>
@@ -716,7 +735,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại giá" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yin-wq-dVG" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="222" y="324" width="129" height="45"/>
+                                                <rect key="frame" x="222" y="376.33333333333331" width="129" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="bAA-Wb-WV1"/>
                                                 </constraints>
@@ -735,7 +754,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại diện tích" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUM-cO-oDe" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="222" y="264" width="129" height="45"/>
+                                                <rect key="frame" x="222" y="316.33333333333331" width="129" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="129" id="6yA-lu-avT"/>
                                                     <constraint firstAttribute="height" constant="45" id="77x-MJ-XfE"/>
@@ -755,7 +774,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Quận/Huyện" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lUg-FJ-SCH" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="184" y="204" width="167" height="45"/>
+                                                <rect key="frame" x="184" y="256.33333333333331" width="167" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="HtG-yn-9ve"/>
                                                 </constraints>
@@ -774,7 +793,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Tỉnh/Thành phố" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thG-Jb-5Nb" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="24" y="204" width="150" height="45"/>
+                                                <rect key="frame" x="24" y="256.33333333333331" width="150" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="1Ww-SK-hLu"/>
                                                     <constraint firstAttribute="height" constant="45" id="5rv-RN-OvF"/>
@@ -794,7 +813,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Loại bất động sản" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wiK-Xp-QA6" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="164" y="84" width="187" height="45"/>
+                                                <rect key="frame" x="164" y="136.33333333333334" width="187" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="FFy-gA-QhU"/>
                                                 </constraints>
@@ -813,7 +832,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Hình thức" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sR8-uI-NeN" customClass="DropDown" customModule="iOSDropDown">
-                                                <rect key="frame" x="24" y="84" width="130" height="45"/>
+                                                <rect key="frame" x="24" y="136.33333333333334" width="130" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="pBr-D0-0gd"/>
                                                     <constraint firstAttribute="width" constant="130" id="wKI-9L-yvi"/>
@@ -833,7 +852,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7jg-oI-yIb">
-                                                <rect key="frame" x="24" y="647.33333333333337" width="327" height="45"/>
+                                                <rect key="frame" x="24" y="699.66666666666663" width="327" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="gKX-Lc-zWU"/>
                                                 </constraints>
@@ -842,7 +861,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7RV-m4-xR5">
-                                                <rect key="frame" x="24" y="707.33333333333337" width="327" height="45"/>
+                                                <rect key="frame" x="24" y="759.66666666666663" width="327" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="6MU-c7-2ce"/>
                                                 </constraints>
@@ -851,7 +870,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nW-P9-sd2">
-                                                <rect key="frame" x="24" y="767.33333333333337" width="327" height="45"/>
+                                                <rect key="frame" x="24" y="819.66666666666663" width="327" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="Ljd-fH-kEn"/>
                                                 </constraints>
@@ -860,7 +879,7 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kse-ZE-Sr2" customClass="RoundUIButtom" customModule="App_Spport_Customers_Land" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="836.33333333333337" width="327" height="45"/>
+                                                <rect key="frame" x="24" y="888.66666666666663" width="327" height="45"/>
                                                 <color key="backgroundColor" red="0.9601467252" green="0.51471614840000002" blue="0.1047999039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="5qt-F7-49S"/>
@@ -879,14 +898,14 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông tin liên hệ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcq-XF-EZz">
-                                                <rect key="frame" x="24" y="612" width="327" height="20.333333333333371"/>
+                                                <rect key="frame" x="24" y="664.33333333333337" width="327" height="20.333333333333371"/>
                                                 <color key="backgroundColor" red="0.9601467252" green="0.51471614840000002" blue="0.1047999039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2L4-Db-cIc">
-                                                <rect key="frame" x="24" y="537" width="327" height="60"/>
+                                                <rect key="frame" x="24" y="589.33333333333337" width="327" height="60"/>
                                                 <color key="backgroundColor" red="0.92150086164474487" green="0.92160815000534058" blue="0.92145150899887085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="bE1-W0-1Hn"/>
@@ -944,24 +963,31 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                         <constraints>
                                             <constraint firstItem="lUg-FJ-SCH" firstAttribute="trailing" secondItem="gds-e8-Z50" secondAttribute="trailing" id="0z1-xE-hsR"/>
                                             <constraint firstItem="7jg-oI-yIb" firstAttribute="leading" secondItem="EEA-2y-S7n" secondAttribute="leading" constant="24" id="16n-Pv-x7h"/>
+                                            <constraint firstItem="6yf-xw-ZOj" firstAttribute="top" secondItem="1r6-pu-uGh" secondAttribute="bottom" constant="2.5" id="2WU-yX-l1O"/>
                                             <constraint firstItem="2L4-Db-cIc" firstAttribute="top" secondItem="SqD-ah-439" secondAttribute="bottom" constant="10" id="2fL-TF-nxx"/>
                                             <constraint firstAttribute="trailing" secondItem="SqD-ah-439" secondAttribute="trailing" constant="24" id="4Y3-JX-HMJ"/>
                                             <constraint firstItem="VjU-Nv-h69" firstAttribute="leading" secondItem="63u-eZ-7K6" secondAttribute="leading" id="5cH-5V-8d9"/>
                                             <constraint firstItem="8nW-P9-sd2" firstAttribute="leading" secondItem="EEA-2y-S7n" secondAttribute="leading" constant="24" id="7Dc-xZ-M0Z"/>
                                             <constraint firstItem="7RV-m4-xR5" firstAttribute="leading" secondItem="EEA-2y-S7n" secondAttribute="leading" constant="24" id="7yj-ME-GCM"/>
                                             <constraint firstItem="tUM-cO-oDe" firstAttribute="leading" secondItem="yin-wq-dVG" secondAttribute="leading" id="7zL-qH-bxt"/>
+                                            <constraint firstItem="1r6-pu-uGh" firstAttribute="top" secondItem="VoZ-rf-SNP" secondAttribute="top" id="DYv-7y-pbu"/>
+                                            <constraint firstItem="VoZ-rf-SNP" firstAttribute="top" secondItem="EEA-2y-S7n" secondAttribute="top" constant="24" id="Dvl-rX-8YZ"/>
                                             <constraint firstItem="VjU-Nv-h69" firstAttribute="top" secondItem="63u-eZ-7K6" secondAttribute="bottom" constant="15" id="EgI-zi-VBu"/>
+                                            <constraint firstItem="6yf-xw-ZOj" firstAttribute="leading" secondItem="1r6-pu-uGh" secondAttribute="leading" id="FHV-n8-X7P"/>
                                             <constraint firstAttribute="trailing" secondItem="8nW-P9-sd2" secondAttribute="trailing" constant="24" id="FZ1-KB-Jxq"/>
                                             <constraint firstItem="gds-e8-Z50" firstAttribute="leading" secondItem="sR8-uI-NeN" secondAttribute="leading" id="GBb-6V-euz"/>
                                             <constraint firstItem="wiK-Xp-QA6" firstAttribute="top" secondItem="sR8-uI-NeN" secondAttribute="top" id="GKa-wL-Hci"/>
+                                            <constraint firstItem="1r6-pu-uGh" firstAttribute="leading" secondItem="VoZ-rf-SNP" secondAttribute="trailing" constant="5" id="HAN-zq-uum"/>
                                             <constraint firstItem="2L4-Db-cIc" firstAttribute="leading" secondItem="EEA-2y-S7n" secondAttribute="leading" constant="24" id="HBY-dk-gz2"/>
                                             <constraint firstItem="sR8-uI-NeN" firstAttribute="leading" secondItem="Iad-as-nXc" secondAttribute="leading" id="HVe-CI-wcZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="1r6-pu-uGh" secondAttribute="trailing" constant="24" id="Hjx-2U-jIO"/>
                                             <constraint firstItem="Kse-ZE-Sr2" firstAttribute="leading" secondItem="EEA-2y-S7n" secondAttribute="leading" constant="24" id="Jq6-5A-Xuw"/>
                                             <constraint firstItem="thG-Jb-5Nb" firstAttribute="top" secondItem="gds-e8-Z50" secondAttribute="bottom" constant="15" id="Myz-nn-9xR"/>
                                             <constraint firstItem="yin-wq-dVG" firstAttribute="leading" secondItem="VjU-Nv-h69" secondAttribute="trailing" constant="10" id="NnL-5i-2BG"/>
                                             <constraint firstItem="tUM-cO-oDe" firstAttribute="trailing" secondItem="lUg-FJ-SCH" secondAttribute="trailing" id="PVr-za-wJh"/>
                                             <constraint firstItem="lUg-FJ-SCH" firstAttribute="top" secondItem="thG-Jb-5Nb" secondAttribute="top" id="SJY-tE-CB3"/>
                                             <constraint firstItem="yin-wq-dVG" firstAttribute="trailing" secondItem="tUM-cO-oDe" secondAttribute="trailing" id="Slv-ei-lSG"/>
+                                            <constraint firstItem="VoZ-rf-SNP" firstAttribute="leading" secondItem="EEA-2y-S7n" secondAttribute="leading" constant="24" id="TEh-fx-jEk"/>
                                             <constraint firstItem="iy7-y4-a57" firstAttribute="trailing" secondItem="yin-wq-dVG" secondAttribute="trailing" id="TlU-87-jLd"/>
                                             <constraint firstItem="wiK-Xp-QA6" firstAttribute="leading" secondItem="sR8-uI-NeN" secondAttribute="trailing" constant="10" id="Tod-tZ-VSb"/>
                                             <constraint firstItem="iy7-y4-a57" firstAttribute="top" secondItem="VjU-Nv-h69" secondAttribute="bottom" constant="15" id="Vjb-Ic-h1q"/>
@@ -973,12 +999,13 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                             <constraint firstItem="7jg-oI-yIb" firstAttribute="top" secondItem="mcq-XF-EZz" secondAttribute="bottom" constant="15" id="bZ7-vC-DIt"/>
                                             <constraint firstItem="thG-Jb-5Nb" firstAttribute="leading" secondItem="gds-e8-Z50" secondAttribute="leading" id="c5r-1F-jK2"/>
                                             <constraint firstItem="iy7-y4-a57" firstAttribute="leading" secondItem="VjU-Nv-h69" secondAttribute="leading" id="cpr-XN-Efq"/>
-                                            <constraint firstItem="Iad-as-nXc" firstAttribute="top" secondItem="EEA-2y-S7n" secondAttribute="top" constant="24" id="fER-tn-zXg"/>
+                                            <constraint firstItem="6yf-xw-ZOj" firstAttribute="trailing" secondItem="1r6-pu-uGh" secondAttribute="trailing" id="deI-S0-6LO"/>
                                             <constraint firstAttribute="trailing" secondItem="Kse-ZE-Sr2" secondAttribute="trailing" constant="24" id="fmd-hB-qwj"/>
                                             <constraint firstAttribute="trailing" secondItem="mcq-XF-EZz" secondAttribute="trailing" constant="24" id="gGj-gk-hJj"/>
                                             <constraint firstItem="63u-eZ-7K6" firstAttribute="leading" secondItem="thG-Jb-5Nb" secondAttribute="leading" id="gNc-KI-c0U"/>
                                             <constraint firstItem="mcq-XF-EZz" firstAttribute="top" secondItem="2L4-Db-cIc" secondAttribute="bottom" constant="15" id="h8j-7Z-zbk"/>
                                             <constraint firstItem="8nW-P9-sd2" firstAttribute="top" secondItem="7RV-m4-xR5" secondAttribute="bottom" constant="15" id="hez-eG-jjP"/>
+                                            <constraint firstItem="Iad-as-nXc" firstAttribute="top" secondItem="6yf-xw-ZOj" secondAttribute="bottom" constant="24" id="hiN-vi-gHE"/>
                                             <constraint firstAttribute="trailing" secondItem="7RV-m4-xR5" secondAttribute="trailing" constant="24" id="hrM-Eo-Rgc"/>
                                             <constraint firstItem="Kse-ZE-Sr2" firstAttribute="top" secondItem="8nW-P9-sd2" secondAttribute="bottom" constant="24" id="iGx-gc-25e"/>
                                             <constraint firstItem="sR8-uI-NeN" firstAttribute="top" secondItem="Iad-as-nXc" secondAttribute="bottom" constant="15" id="j8v-fa-k3O"/>
@@ -1336,35 +1363,35 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to create a custom tab bar at the top. Just like 9gag. Do you know a place where i can learn how to do it" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55d-Lm-wt5">
-                                                    <rect key="frame" x="15" y="15" width="187.66666666666666" height="97.666666666666671"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="15" y="14.999999999999993" width="187.66666666666666" height="101.33333333333331"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ujx-vN-YmZ">
-                                                    <rect key="frame" x="15" y="152.66666666666666" width="345" height="1"/>
-                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <rect key="frame" x="15" y="153.33333333333334" width="345" height="0.33333333333334281"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="Y1w-wc-tKu"/>
+                                                        <constraint firstAttribute="height" constant="0.5" id="Y1w-wc-tKu"/>
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-clock" translatesAutoresizingMaskIntoConstraints="NO" id="plL-2h-Xha">
-                                                    <rect key="frame" x="15" y="122.66666666666669" width="15" height="15"/>
+                                                    <rect key="frame" x="15" y="126.33333333333331" width="12" height="12"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="15" id="CZG-nv-TfN"/>
-                                                        <constraint firstAttribute="width" constant="15" id="Fkf-h6-Ls0"/>
+                                                        <constraint firstAttribute="height" constant="12" id="CZG-nv-TfN"/>
+                                                        <constraint firstAttribute="width" constant="12" id="Fkf-h6-Ls0"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68C-rs-EtP" userLabel="labTime">
-                                                    <rect key="frame" x="40" y="122.66666666666669" width="162.66666666666666" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="37" y="126.33333333333331" width="165.66666666666666" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="aIL-75-beP">
-                                                    <rect key="frame" x="207.66666666666663" y="37" width="152.33333333333337" height="80"/>
+                                                    <rect key="frame" x="207.66666666666663" y="27" width="152.33333333333337" height="100"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="80" id="Kjc-5I-BIU"/>
+                                                        <constraint firstAttribute="height" constant="100" id="Kjc-5I-BIU"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -1778,9 +1805,9 @@ chăm sóc khách hàng - Hải Phát Land</string>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHa-aT-1NC">
                                                 <rect key="frame" x="24" y="15" width="327" height="264"/>
-                                                <mutableString key="text">Với mục tiêu phục vụ khách hàng ngày một tốt hơn, kính mong Quý khách hàng bớt chút thời gian cho ý kiến đánh giá về chất lượng dịch vụ tư vấn và hỗ trợ của nhân viên kinh doanh Hải Phát Land, cũng như phản hồi các vấn đề gặp phải trong quá trình tư vấn.
+                                                <string key="text">Với mục tiêu phục vụ khách hàng ngày một tốt hơn, kính mong Quý khách hàng bớt chút thời gian cho ý kiến đánh giá về chất lượng dịch vụ tư vấn và hỗ trợ của nhân viên kinh doanh Hải Phát Land, cũng như phản hồi các vấn đề gặp phải trong quá trình tư vấn.
 
-Nội dung Quý khách hàng phản hồi, đánh giá sẽ được chuyển trực tiếp đến bộ phận chăm sóc khách hàng của Hải Phát Land nhằm đánh giá và nâng cao hơn nữa dịch vụ cho khách hàng.</mutableString>
+Nội dung Quý khách hàng phản hồi, đánh giá sẽ được chuyển trực tiếp đến bộ phận chăm sóc khách hàng của Hải Phát Land nhằm đánh giá và nâng cao hơn nữa dịch vụ cho khách hàng.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2010,6 +2037,7 @@ Nội dung Quý khách hàng phản hồi, đánh giá sẽ được chuyển tr
         <image name="ic-user" width="16" height="18.666666030883789"/>
         <image name="ic_avatar_default" width="24.666666030883789" height="24.666666030883789"/>
         <image name="ic_back" width="14" height="14"/>
+        <image name="ic_create_manage" width="55" height="45"/>
         <image name="ic_delete" width="50" height="50"/>
         <image name="ic_kygui" width="20" height="20"/>
         <image name="ic_logo" width="65" height="76"/>
