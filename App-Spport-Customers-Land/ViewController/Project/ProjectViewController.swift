@@ -22,11 +22,23 @@ class ProjectViewController: UIViewController {
         projectCollectionView.dataSource = self
         avatar.setCornerRadius()
         avatar.fromUrl(UserService.userInfo?.avatar, placeholder: #imageLiteral(resourceName: "ic_avatar_default"))
+        getItem()
+    }
+    
+    private func getItem(){
+//        DgmWaiting.sharedInstance().show()
         vm.getItem(onSuccess: {
+//            DgmWaiting.sharedInstance().dismiss()
             self.projectCollectionView.reloadData()
         }, onFail: {errorMessage in
+//            DgmWaiting.sharedInstance().dismiss()
             Toast.error(errorMessage)
         })
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        getItem()
     }
 
     override func didReceiveMemoryWarning() {

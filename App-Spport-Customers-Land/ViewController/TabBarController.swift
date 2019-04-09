@@ -32,19 +32,17 @@ class TabBarController: UITabBarController {
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         
         let tabPhone = storyboard.instantiateViewController(withIdentifier: "SupportSwitchboardViewController") as? SupportSwitchboardViewController
-        tabPhone?.getDataPhone(phone: respon?.hotline, email: respon?.email, id: respon?.id, urlLogo: respon?.image_url)
-//        tabPhone?.tabBarItem.title = Loc("dashboard-tab-title")
+        tabPhone?.getDataPhone(phone: respon?.hotline, email: respon?.email, id: respon?.id, urlLogo: respon?.image_url, rating: respon?.rank_project, title: respon?.name)
         
         let tabHistory = storyboard.instantiateViewController(withIdentifier: "HistoryViewController") as? HistoryViewController
         tabHistory?.viewHistory(id: respon?.id)
-//        tabHistory.tabBarItem.title = Loc("press-release-tab-title")
         
         let tabNewsPager = storyboard.instantiateViewController(withIdentifier: "InfoViewController") as? InfoViewController
         tabNewsPager?.viewTabinfoId(projectId: respon?.id)
-//        tabNewsPager.tabBarItem.title = Loc("press-conference-tab-title")
         
-        let tabUser = storyboard.instantiateViewController(withIdentifier: "UserViewController")
-//        tabUser.tabBarItem.title = Loc("notification-tab-title")
+        let tabUser = storyboard.instantiateViewController(withIdentifier: "UserViewController") as? UserViewController
+        
+        tabUser?.viewTabUserProjectId(id: respon?.id)
         
         let tabManager = storyboard.instantiateViewController(withIdentifier: "ManageViewController")
 //        tabManager.tabBarItem.title = Loc("profile_screen_tab_title")
@@ -53,7 +51,7 @@ class TabBarController: UITabBarController {
             tabPhone!,
             tabHistory!,
             tabNewsPager!,
-            tabUser,
+            tabUser!,
             tabManager
         ]
     }

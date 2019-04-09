@@ -26,11 +26,12 @@ class ProjectApi: DgmApi {
        self.get(queryString: "list-project", completion: completion)
     }
     
-    func postRatting(_ id: String?, _ rankProject: String?, completion: @escaping (DgmResponse) -> Void) -> Void  {
-        self.post(method: "post-rank-project", params: [
-            "id": id ?? "",
-            "rank_project": rankProject ?? ""
-            ], completion: completion)
+    func postRatting(_ id: Int?, _ rankProject: Int?, completion: @escaping (DgmResponse) -> Void) -> Void  {
+        let params = [
+            "id": id ?? 0,
+            "rank_project": rankProject ?? 0 ] as [String : Any]
+        
+        self.post(method: "post-rank-project", params: params, completion: completion)
     }
     
     func postHistory(_ id: Int?, completion: @escaping (DgmResponse) -> Void) -> Void  {
@@ -39,20 +40,19 @@ class ProjectApi: DgmApi {
             ], completion: completion)
     }
     
-    func postSaleProject(_ id: String?, completion: @escaping (DgmResponse) -> Void) -> Void  {
+    func postSaleProject(_ id: Int?, completion: @escaping (DgmResponse) -> Void) -> Void  {
         self.post(method: "list-sale-project", params: [
             "id": id ?? ""
             ], completion: completion)
     }
     
-    func postFeedback(_ id: String?, _ transactionId: String?, _ saleId: String?, _ rankSale: String?, _ note: String?, completion: @escaping (DgmResponse) -> Void) -> Void  {
-        self.post(method: "post-feedback", params: [
-            "id": id ?? "",
-            "transaction_id": transactionId ?? "",
-            "sale_id": saleId ?? "",
-            "rank_sale": rankSale ?? "",
-            "note": note ?? ""
-            ], completion: completion)
+    func postFeedback(_ id: Int?, _ transactionId: Int?, _ saleId: Int?, _ rankSale: Int?, _ note: String?, completion: @escaping (DgmResponse) -> Void) -> Void  {
+        var params = ["id": id ?? 0,
+                      "transaction_id": transactionId ?? 0,
+                      "sale_id": saleId ?? 0,
+                      "rank_sale": rankSale ?? 0,] as [String : Any]
+        params["note"] = note ?? ""
+        self.post(method: "post-feedback", params: params, completion: completion)
     }
     
     

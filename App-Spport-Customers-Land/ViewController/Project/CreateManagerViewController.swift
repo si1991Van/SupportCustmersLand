@@ -56,6 +56,14 @@ class CreateManagerViewController: BaseViewController, UITextFieldDelegate{
         self.labTitle.text = Loc("Quản lý ký gửi")
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ txtDiscription: UITextField) -> Bool{
+        self.view.endEditing(true)
+        return true
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

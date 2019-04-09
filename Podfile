@@ -20,6 +20,7 @@ target 'App-Spport-Customers-Land' do
   pod 'iOSDropDown'
   pod 'DropDown', '2.3.2'
   pod 'RatingBar', '~> 0.0.1'
+  pod 'Cosmos'
 
 
   target 'App-Spport-Customers-LandTests' do

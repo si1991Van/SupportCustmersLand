@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.7.3)
   - AlamofireImage (3.4.1):
     - Alamofire (~> 4.7)
+  - Cosmos (17.0.0)
   - DropDown (2.3.2)
   - Firebase/Core (5.10.0):
     - Firebase/CoreOnly
@@ -82,6 +83,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage (~> 3.4)
+  - Cosmos
   - DropDown (= 2.3.2)
   - Firebase/Core
   - Firebase/Database
@@ -98,6 +100,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - Cosmos
     - DropDown
     - Firebase
     - FirebaseAnalytics
@@ -121,6 +124,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  Cosmos: 309e489f21ffc91a1eeecfebef7f817cd2fcfba6
   DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
   Firebase: 6691d47562a780c26281ce8464518faafc90c610
   FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
@@ -141,6 +145,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
 
-PODFILE CHECKSUM: 65c0b0f3ef46a07a1736e480849778007c41f7d8
+PODFILE CHECKSUM: 14760a634a82a8fb737bbbe0c9934289bac4dea1
 
 COCOAPODS: 1.6.1

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Cosmos
 class SupportSwitchboardViewController: BaseViewController {
 
     @IBOutlet weak var buttHotlline: UIButton!
@@ -15,22 +15,40 @@ class SupportSwitchboardViewController: BaseViewController {
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var imgaLogo: UIImageView!
-    var phone: String?
-    var email: String?
-    var link : String?
-    var id: Int?
+    @IBOutlet weak var ratingView: CosmosView!
+    private var vm = SupportViewMode()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         avatar.setCornerRadius()
         avatar.fromUrl(UserService.userInfo?.avatar, placeholder: #imageLiteral(resourceName: "ic_avatar_default"))
-        buttHotlline.setTitle("Hotline: " + phone!, for: .normal)
-        buttonEmail.setTitle("Email: " + email! , for: .normal)
-        imgaLogo.fromUrl(link, placeholder: #imageLiteral(resourceName: "ic_logo"))
+        buttHotlline.setTitle("Hotline: " + vm.phone!, for: .normal)
+        buttonEmail.setTitle("Email: " + vm.email! , for: .normal)
+        imgaLogo.fromUrl(vm.link, placeholder: #imageLiteral(resourceName: "ic_logo"))
         imgaLogo.setBorderCornerRadius()
+        txtTitle.text = vm.title
+        ratingView.rating = Double(vm.rating ?? 0)
+        ratingView.didFinishTouchingCosmos = { rating in
+            
+            self.postRatingProject(rating: rating)
+        }
         
         // Do any additional setup after loading the view.
+    }
+    
+    private func postRatingProject(rating : Double?){
+        DgmWaiting.sharedInstance().show()
+        vm.postRattingProject(onSuccess: {message in
+            DgmWaiting.sharedInstance().dismiss()
+            Toast.error(message)
+        }, onFail: { errorMessage in
+            DgmWaiting.sharedInstance().dismiss()
+            Toast.error(errorMessage)
+            
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,7 +66,7 @@ class SupportSwitchboardViewController: BaseViewController {
         }
     }
     @IBAction func onClickPhone(_ sender: Any) {
-        dialNumber(number: phone)
+        dialNumber(number: vm.phone)
         
     }
     @IBAction func onClickChat(_ sender: Any) {
@@ -71,11 +89,15 @@ class SupportSwitchboardViewController: BaseViewController {
     }
 }
 extension SupportSwitchboardViewController{
-    func getDataPhone(phone: String?, email: String?, id: Int?, urlLogo: String?){
-        self.phone = phone ?? "Đang cập nhật"
-        self.email = email ?? "Đang cập nhật"
-        self.id = id
-        self.link = urlLogo ?? ""
+    func getDataPhone(phone: String?, email: String?, id: Int?, urlLogo: String?, rating : Int?, title: String?){
+        self.vm.phone = phone ?? "Đang cập nhật"
+        self.vm.email = email ?? "Đang cập nhật"
+        self.vm.id = id
+        self.vm.link = urlLogo ?? ""
+        self.vm.rating = rating
+        self.vm.title = title
     }
+    
+    
 }
 

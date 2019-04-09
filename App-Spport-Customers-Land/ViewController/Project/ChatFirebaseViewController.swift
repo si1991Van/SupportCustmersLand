@@ -12,9 +12,11 @@ import FirebaseDatabase
 class ChatFirebaseViewController: BaseViewController {
     
     @IBOutlet weak var tablViewChat: UITableView!
+    
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var labTitle: UILabel!
     @IBOutlet weak var txtInput: UITextField!
+    @IBOutlet weak var scronllVIewChat: UIScrollView!
     
     
     var ref: DatabaseReference!
@@ -28,34 +30,27 @@ class ChatFirebaseViewController: BaseViewController {
         tablViewChat.delegate = self
         tablViewChat.dataSource = self
         ref = Database.database().reference().child("messages").child((UserService.userInfo?.phone)!)
-        
         readChat()
         
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
-//
-
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
-    
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height
-                let height = keyboardSize.height
-                self.tablViewChat.contentInset.bottom = height
-                self.tablViewChat.scrollIndicatorInsets.bottom = height
-                
-//                let scrollPoint = CGPoint(x: 0, y: self.tablViewChat.contentSize.height - self.tablViewChat.frame.size.height)
-//                self.tablViewChat.setContentOffset(scrollPoint, animated: false)
-            }
-        }
+    @objc func keyboardWillShow(note: Notification) {
+        let userInfo = note.userInfo
+        let keyboardFrame = userInfo?[UIKeyboardFrameEndUserInfoKey] as! CGRect
+        let contentInset = UIEdgeInsetsMake(0.0, 0.0, keyboardFrame.height, 0.0)
+        self.scronllVIewChat.contentInset = contentInset
+        self.scronllVIewChat.scrollIndicatorInsets = contentInset
+        self.scronllVIewChat.scrollRectToVisible(txtInput.frame, animated: true)
     }
-//
+    
     @objc func keyboardWillHide(notification: NSNotification) {
-        if self.view.frame.origin.y != 0 {
-            self.view.frame.origin.y = 0
-        }
+        let contentInset = UIEdgeInsets.zero
+        self.scronllVIewChat.contentInset = contentInset
+        self.scronllVIewChat.scrollIndicatorInsets = contentInset
     }
     
     override func localization() {
@@ -89,6 +84,7 @@ class ChatFirebaseViewController: BaseViewController {
                 }
                 //reloading the tableview
                 self.tablViewChat.reloadData()
+                self.scrollToBottomOfChat()
                 self.getCountNotification()
             }
         })
@@ -120,7 +116,7 @@ class ChatFirebaseViewController: BaseViewController {
         self.db.child(acountId).updateChildValues(childUpdates)
         txtInput.text = ""
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        self.view.endEditing(true)
     }
     
     func getCountNotification() {
@@ -178,5 +174,8 @@ extension ChatFirebaseViewController: UITableViewDelegate, UITableViewDataSource
         return cell!
     }
     
-    
+    func scrollToBottomOfChat(){
+        let indexPath = IndexPath(row: item.count - 1, section: 0)
+        tablViewChat.scrollToRow(at: indexPath, at: .bottom, animated: false)
+    }
 }

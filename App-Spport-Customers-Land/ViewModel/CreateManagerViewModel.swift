@@ -133,7 +133,7 @@ extension CreateManagerViewModel{
     }
     
     func updateImage(_ image: UIImage, onSuccess : @escaping () -> Void ,onFail : @escaping (String?) -> Void) -> Void {
-        DgmWaiting.sharedInstance().show()
+//        DgmWaiting.sharedInstance().show()
         Api.uploadImageApi.uploadImage(image, completion: {
             response in DispatchQueue.main.async {
                 let status = response.json()?["status"].bool

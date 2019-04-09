@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95CA357FBD8B09951731708E26EF3724"
+               BlueprintIdentifier = "92821278E9A9F1D873B04DA0D877043B"
                BuildableName = "RatingBar.framework"
                BlueprintName = "RatingBar"
                ReferencedContainer = "container:Pods.xcodeproj">

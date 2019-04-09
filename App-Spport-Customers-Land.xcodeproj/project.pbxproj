@@ -59,6 +59,9 @@
 		188831AB21EC896E00924A2F /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188831AA21EC896E00924A2F /* ManageViewController.swift */; };
 		188831AD21EC898800924A2F /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188831AC21EC898800924A2F /* InfoViewController.swift */; };
 		188831AF21EC89D300924A2F /* SupportSwitchboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188831AE21EC89D300924A2F /* SupportSwitchboardViewController.swift */; };
+		189348F52254586C0018B717 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189348F42254586C0018B717 /* UITableView.swift */; };
+		189348F72255BF190018B717 /* SaleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189348F62255BF190018B717 /* SaleCollectionViewCell.swift */; };
+		189348F9225601FF0018B717 /* SupportViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189348F8225601FF0018B717 /* SupportViewMode.swift */; };
 		1896303F21D7229C00FFE330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896303E21D7229C00FFE330 /* AppDelegate.swift */; };
 		1896304621D7229C00FFE330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1896304521D7229C00FFE330 /* Assets.xcassets */; };
 		1896305421D7229C00FFE330 /* App_Spport_Customers_LandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1896305321D7229C00FFE330 /* App_Spport_Customers_LandTests.swift */; };
@@ -176,6 +179,9 @@
 		188831AA21EC896E00924A2F /* ManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageViewController.swift; sourceTree = "<group>"; };
 		188831AC21EC898800924A2F /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		188831AE21EC89D300924A2F /* SupportSwitchboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportSwitchboardViewController.swift; sourceTree = "<group>"; };
+		189348F42254586C0018B717 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		189348F62255BF190018B717 /* SaleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleCollectionViewCell.swift; sourceTree = "<group>"; };
+		189348F8225601FF0018B717 /* SupportViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewMode.swift; sourceTree = "<group>"; };
 		1896303B21D7229C00FFE330 /* App-Spport-Customers-Land.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-Spport-Customers-Land.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1896303E21D7229C00FFE330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1896304521D7229C00FFE330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -460,6 +466,7 @@
 				18302774222CCE0F003C38CE /* TabInfoViewModel.swift */,
 				183EBC4E222E7B76008245D5 /* CreateManagerViewModel.swift */,
 				186053062235FEF900B734BE /* NotificationViewModel.swift */,
+				189348F8225601FF0018B717 /* SupportViewMode.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -499,6 +506,7 @@
 				18C9C92F21F7180400A03007 /* UIImageView.swift */,
 				18352D4D21F96223005731E0 /* UIAlertAction.swift */,
 				1830277E222D30DD003C38CE /* UILabel.swift */,
+				189348F42254586C0018B717 /* UITableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -526,6 +534,7 @@
 				18302772222CC257003C38CE /* CustomCollectionViewCell.swift */,
 				18302776222CDD0C003C38CE /* TabInforTableViewCell.swift */,
 				1880532122390B340064B9BC /* UploadImageCollectionViewCell.swift */,
+				189348F62255BF190018B717 /* SaleCollectionViewCell.swift */,
 			);
 			path = Tableview;
 			sourceTree = "<group>";
@@ -780,6 +789,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-App-Spport-Customers-Land/Pods-App-Spport-Customers-Land-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -797,6 +807,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -829,11 +840,13 @@
 				18C9C92821F6DB3E00A03007 /* ChangeViewModel.swift in Sources */,
 				1836E1CC22014C5300787EED /* SettingResponse.swift in Sources */,
 				1880B79322254F8E001B5370 /* BookingViewModel.swift in Sources */,
+				189348F52254586C0018B717 /* UITableView.swift in Sources */,
 				18C2307C21E72891005C37F5 /* ProfileViewModel.swift in Sources */,
 				1836E1C42201496D00787EED /* HistoryViewModel.swift in Sources */,
 				1896308321D729F200FFE330 /* Convertor.swift in Sources */,
 				18D2493A21E846B5001A893A /* ProjectCollectionViewCell.swift in Sources */,
 				18352D5021F9AB1C005731E0 /* ProjectResponse.swift in Sources */,
+				189348F9225601FF0018B717 /* SupportViewMode.swift in Sources */,
 				18352D5221F9AB50005731E0 /* BaseListResponse.swift in Sources */,
 				188831AB21EC896E00924A2F /* ManageViewController.swift in Sources */,
 				1896308521D72A1300FFE330 /* Toast.swift in Sources */,
@@ -889,6 +902,7 @@
 				188831A421E98A0600924A2F /* TabHistoryTableViewCell.swift in Sources */,
 				1896308E21D72AE500FFE330 /* UserService.swift in Sources */,
 				1896307321D7282200FFE330 /* DgmApi.swift in Sources */,
+				189348F72255BF190018B717 /* SaleCollectionViewCell.swift in Sources */,
 				1896307B21D7296E00FFE330 /* DgmLocalizeService.swift in Sources */,
 				1865AC152238C68A00C91E33 /* RoundUIButtom.swift in Sources */,
 				1845BA0821DA26CD00DE09C1 /* SignInViewController.swift in Sources */,
@@ -1075,7 +1089,7 @@
 				DEVELOPMENT_TEAM = M2Q63Z7GR9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "App-Spport-Customers-Land/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haiphat.SpportCustomersLand;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1099,7 +1113,7 @@
 				DEVELOPMENT_TEAM = M2Q63Z7GR9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "App-Spport-Customers-Land/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = haiphat.SpportCustomersLand;
 				PRODUCT_NAME = "$(TARGET_NAME)";

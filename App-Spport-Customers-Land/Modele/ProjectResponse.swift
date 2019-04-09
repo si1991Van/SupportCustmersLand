@@ -16,6 +16,6 @@ struct ProjectItemResponse {
     var hotline: String?
     var email: String?
     var description: String?
-    var rank_project: String?
+    var rank_project: Int?
     
 }

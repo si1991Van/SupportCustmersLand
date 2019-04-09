@@ -12,8 +12,8 @@ class ListSaleResponse: BaseListResponse<SaleResponse> {
 }
 
 struct SaleResponse {
-    var id: String?
-    var transaction_id: String?
+    var id: Int?
+    var transaction_id: Int?
     var fullname: String?
     var avatar: String?
     var name: String?

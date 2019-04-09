@@ -8,8 +8,8 @@
 
 import Foundation
 class Config {
-   static let API_URL = "https://report.haiphatland.com.vn/api"
-   static let URL_DETAIL_NEW = "https://report.haiphatland.com.vn/api/web-view/"
+   static let API_URL = "http://report.haiphatland.com.vn/api"
+   static let URL_DETAIL_NEW = "http://report.haiphatland.com.vn/api/web-view/"
 
 //    static let API_URL = "https://reportdev.haiphattech.com/api"
 //    static let URL_DETAIL_NEW = "https://reportdev.haiphattech.com/api/web-view/"
