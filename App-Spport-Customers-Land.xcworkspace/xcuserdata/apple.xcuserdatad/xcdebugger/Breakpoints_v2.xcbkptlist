@@ -17,6 +17,38 @@
             endingLineNumber = "36"
             landmarkName = "switchChanged(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "App_Spport_Customers_Land.SettingTableViewCell.switchChanged(Any) -&gt; ()"
+                  moduleName = "App-Spport-Customers-Land"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Untitled/Project/IOS/App-Spport-Customers-Land/App-Spport-Customers-Land/Tableview/SettingTableViewCell.swift"
+                  timestampString = "576561798.697956"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "107">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in App_Spport_Customers_Land.SettingTableViewCell.switchChanged(Any) -&gt; ()"
+                  moduleName = "App-Spport-Customers-Land"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Untitled/Project/IOS/App-Spport-Customers-Land/App-Spport-Customers-Land/Tableview/SettingTableViewCell.swift"
+                  timestampString = "576561798.701548"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "App-Spport-Customers-Land/ViewController/TabBarController.swift"
-            timestampString = "576477756.456895"
+            timestampString = "576485497.448676"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"

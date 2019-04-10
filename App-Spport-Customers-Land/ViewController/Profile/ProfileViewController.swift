@@ -138,7 +138,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate{
                 shareURL()
                 break
             case 1:
-                if let url = URL(string: "itms-apps://itunes.apple.com/app/id1024941703"),
+                if let url = URL(string: "itms-apps://itunes.apple.com/app/id1455938027"),
                     UIApplication.shared.canOpenURL(url){
                     UIApplication.shared.openURL(url)
                 }
@@ -157,7 +157,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func shareURL() {
-        let URLstring =  String(format:"https://itunes.apple.com/in/app/facebook/id284882215?mt=8")
+        let URLstring =  String(format:"https://itunes.apple.com/in/app/facebook/id1455938027?l=vi&mt=8")
         let urlToShare = URL(string:URLstring)
         let title = "title to be shared"
         let activityViewController = UIActivityViewController(

@@ -57,17 +57,15 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      
         let cell = historyTableView.dequeueReusableCell(withIdentifier: "TabHistoryTableViewCell") as! TabHistoryTableViewCell
-        var item = vm.itemHistory[indexPath.row]
-        
-        cell.labType.text = item.name
-        cell.labDateTime.text = item.date_payment
-        if item.status == 0{
-            cell.labStatus.text = "Chưa thanh toán"
-        }else{
-            cell.labStatus.text = "đã thanh toán"
-        }
-        cell.img.image = #imageLiteral(resourceName: "ic-arrowAltCircleRight")
+        let item = vm.itemHistory[indexPath.row]
+
+            cell.labType.text = item.name
+            cell.labDateTime.text = item.date_payment
+            cell.img.image = #imageLiteral(resourceName: "ic-arrowAltCircleRight")
+
+
         return cell
     }
     

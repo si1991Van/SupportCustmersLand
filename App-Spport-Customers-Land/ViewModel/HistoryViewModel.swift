@@ -13,6 +13,7 @@ class HistoryViewModel: NSObject{
     var id: Int?
     var histTitleResponse: [HistoryTitleResponse] = []
     var itemHistory: [HistoryItemResponse] = []
+    var items : [[HistoryItemResponse]] = [[]]
 }
 
 extension HistoryViewModel{
@@ -39,9 +40,11 @@ extension HistoryViewModel{
                             return item
                         }
                         self.itemHistory.append(contentsOf: children)
+                        self.items.append(self.itemHistory)
                         return historyTitle
                     }
                     self.histTitleResponse.append(contentsOf: data)
+                    
                     onSuccess()
                 }else{
                     onFail(message)

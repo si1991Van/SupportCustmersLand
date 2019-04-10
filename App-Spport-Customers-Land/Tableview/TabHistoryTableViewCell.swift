@@ -12,7 +12,6 @@ class TabHistoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labType: UILabel!
     @IBOutlet weak var labDateTime: UILabel!
-    @IBOutlet weak var labStatus: UILabel!
     @IBOutlet weak var img: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
